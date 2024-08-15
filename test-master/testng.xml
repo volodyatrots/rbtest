@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Gmail" parallel="tests" data-provider-thread-count="2">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="com.rb.lab.utils.report.ReportListener"/>
+    </listeners>
+    <test name="Test Send Letter">
+        <classes>
+            <class name="com.rb.lab.tests.TestGmail"/>
+        </classes>
+    </test>
+    <test name="Test Account">
+        <classes>
+            <class name="com.rb.lab.tests.TestAccount"/>
+        </classes>
+    </test>
+</suite>

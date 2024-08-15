@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<messages>
+    <message>
+        <mailto>z2393005@mvrht.net</mailto>
+        <mailsubject>Test Mail</mailsubject>
+        <mailmessage>Hi!</mailmessage>
+    </message>
+    <message>
+        <mailto>z2393005@mvrht.net</mailto>
+        <mailsubject>Test First Mail</mailsubject>
+        <mailmessage>Hi!</mailmessage>
+    </message>
+    <message>
+        <mailto>z2393005@mvrht.net</mailto>
+        <mailsubject>Test Second Mail</mailsubject>
+        <mailmessage>Hi!</mailmessage>
+    </message>
+    <message>
+        <mailto>z2393005@mvrht.net</mailto>
+        <mailsubject>Test Third Mail</mailsubject>
+        <mailmessage>Hi!</mailmessage>
+    </message>
+    <message>
+        <mailto>z2393005@mvrht.net</mailto>
+        <mailsubject>Test Fourth Mail</mailsubject>
+        <mailmessage>Hi!</mailmessage>
+    </message>
+</messages>
