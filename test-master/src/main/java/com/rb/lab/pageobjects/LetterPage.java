@@ -3,6 +3,7 @@ package com.rb.lab.pageobjects;
 import com.rb.lab.control.elements.Button;
 import com.rb.lab.control.elements.TextInput;
 import com.rb.lab.driver.Driver;
+import com.rb.lab.utils.WaitUtilities;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -31,16 +32,19 @@ public class LetterPage extends PageObject {
     private Button sendButton;
 
 
-    public void enterEmailTo(String mailTo) {
+    public LetterPage enterEmailTo(String mailTo) {
         mailToInput.sendKeys(mailTo);
+        return this;
     }
 
-    public void enterEmailSubject(String mailSubject) {
+    public LetterPage enterEmailSubject(String mailSubject) {
         mailSubjectInput.sendKeys(mailSubject);
+        return this;
     }
 
-    public void enterMessage(String mailMessage) {
+    public LetterPage enterMessage(String mailMessage) {
         mailMessageInput.sendKeys(mailMessage);
+        return this;
     }
 
     public void closeLetter() {

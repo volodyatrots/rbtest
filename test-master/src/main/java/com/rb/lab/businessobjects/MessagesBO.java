@@ -23,10 +23,10 @@ public class MessagesBO {
     public void writeLetter(MessageModel message) {
         LOG.info("Writing Letter");
         gmailInboxPage.composeLetter();
-        letterPage.enterEmailTo(message.getMailTo());
-        letterPage.enterEmailSubject(message.getMailSubject());
-        letterPage.enterMessage(message.getMailMessage());
-        letterPage.closeLetter();
+        letterPage.enterEmailTo(message.getMailTo()).
+        enterEmailSubject(message.getMailSubject()).
+        enterMessage(message.getMailMessage()).
+        closeLetter();
     }
 
     public void openDrafts() {
